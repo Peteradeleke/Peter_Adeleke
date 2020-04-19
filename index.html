@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK 3</title>
+</head>
+<body>
+    <script>
+        function numFunc(num) {
+            let myData = [];
+            for (a = 1; a <= num; a++) {
+                if (a % 2 === 0 && a % 3 === 0 && a % 5 === 0) {
+                    myData.push('yu-gi-oh');
+                }
+
+                else if (a % 2 === 0 && a % 3 === 0) {
+                    myData.push('yu-gi');
+                }
+
+                else if (a % 2 === 0 &&  a % 5 === 0) {
+                    myData.push('yu-oh');
+                }
+
+                else if (a % 3 === 0 && a % 5 === 0) {
+                    myData.push('gi-oh');
+                }
+
+                else if (a % 2 === 0) {
+                    myData.push('yu');
+                }
+
+                else if (a % 3 === 0) {
+                    myData.push('gi');
+                }
+
+                else if (a % 5 === 0) {
+                    myData.push('oh');
+                }                 
+
+                else {
+                    myData.push(a);
+                }
+            }
+
+            console.log(myData);
+            return myData;
+        }
+        
+
+        numFunc(100);
+        numFunc(78);
+    </script>    
+</body>
+</html>
